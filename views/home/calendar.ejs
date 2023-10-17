@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Timeline</title>
+    <link rel="stylesheet" href="/css/home/calendar.css">
+    <script src="/js/home/calendar.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav id="aa">
+            <li><a href="/">main</a>
+            <li><a href="/timer">timer</a>
+            <li><a href="/post">post</a>
+            <li><a href="/logout">logout</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <table class="Calendar">
+                <thead>
+                    <tr>
+                        <td onClick="prevCalendar();" style="cursor:pointer;">&#60;</td>
+                        <td colspan="5">
+                            <span id="caly"></span>년
+                            <span id="calm"></span>월
+                        </td>
+                        <td onClick="nextCalendar();" style="cursor:pointer;">&#62;</td>
+                    </tr>
+                    <tr>
+                        <td>일</td>
+                        <td>월</td>
+                        <td>화</td>
+                        <td>수</td>
+                        <td>목</td>
+                        <td>금</td>
+                        <td>토</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <section class="list">
+            <h2>list</h2>
+            <ul id="study-list">
+            </ul>
+            <input type="text" id="new-item">
+            <button class="list-button" onclick="addItem()">+</button>
+        </section>
+        <section class="memo">
+            <h2>Memo</h2>
+            <a class="arrow">&#9658;
+                <textarea id="memo-text" rows="4" cols="50"></textarea>
+            </a>
+        </section>
+    </main>
+</body>
+</html>

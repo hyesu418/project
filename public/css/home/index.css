@@ -1,0 +1,33 @@
+body{
+    background-color: #f2eef8;
+}
+#aa{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+#aa li a{
+    font-weight: bold;
+    font-size: 3vw;
+    text-decoration: none;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    color: #6f5994;
+    position: relative;
+}
+#aa li a::before{
+    content: " ";
+    height: 3.5px;
+    width: 0;
+    background-color: #b19bd7;
+    border-radius: 10px;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 0;
+}
+#aa li a:hover::before{
+    width: 100%;
+    background-color: #b19bd7;
+}

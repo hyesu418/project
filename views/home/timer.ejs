@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Timeline</title>
+    <link rel="stylesheet" href="/css/home/timer.css">
+    <script src="/js/home/timer.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav id="aa">
+            <li><a href="/">main</a>
+            <li><a href="/calendar">calendar</a>
+            <li><a href="/post">post</a>
+            <li><a href="/logout">logout</a>
+        </nav>
+    </header>
+    <main>
+        <div class="stopwatch">
+            <div class="time" id="display">00:00:00</div>
+            <div class="time" id="startTime">시작: </div>
+            <div class="time" id="endTime">종료: </div>
+            <div class="buttons">
+                <button id="startStop" onclick="startStop()">시작</button>
+                <button id="reset" onclick="reset()">초기화</button>
+            </div>
+        </div>
+        <section class="recorded-times">
+            <a>시작</a> <a>종료</a> <a>시간</a>
+            <ul id="recordList"></ul>
+        </section>
+    </main>
+</body>
+</html>

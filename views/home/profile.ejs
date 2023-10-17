@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile</title>
+  <script s></script>
+</head>
+<body>
+  <h1>User Profile</h1>
+  <div id="profile-info"></div>
+
+  <script>
+    const userId = 1; // 로그인한 사용자의 ID를 설정하세요
+
+    fetch(`/user-profile/${userId}`)
+      .then((response) => response.json())
+      .then((userProfile) => {
+        const profileInfo = document.getElementById('profile-info');
+
+        profileInfo.innerHTML = `
+          <h2>User ID: ${userProfile.id}</h2>
+          <p>Username: ${userProfile.username}</p>
+          <p>Nickname: ${userProfile.nickname}</p>
+          <!-- 여기에 다른 사용자 프로필 정보를 표시할 수 있습니다 -->
+        `;
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  </script>
+</body>
+</html>

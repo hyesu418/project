@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2eef8;
+}
+a {
+    text-decoration: none;
+}
+header{
+    overflow: hidden;
+    background-color: #b19bd7;
+    padding: 3vh;
+    color:#fff;
+}
+#aa{
+    list-style: none;
+    float: right;
+    display: flex;
+}
+#aa li a{
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: #fff;
+    margin-left: 1em;
+}

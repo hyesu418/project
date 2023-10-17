@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2eef8;
+}
+a {
+    text-decoration: none;
+}
+header{
+    overflow: hidden;
+    background-color: #b19bd7;
+    padding: 3vh;
+    color:#fff;
+}
+#aa{
+    list-style: none;
+    float: right;
+    display: flex;
+}
+#aa li a{
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: #fff;
+    margin-left: 1em;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5vw;
+    margin-right: 5em;
+    margin-left: 5em;
+}
+.calendar {
+    width: 60%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.Calendar>thead>tr:first-child>td {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
+.Calendar>thead>tr:last-child>td {
+    font-family: 'Questrial', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+.Calendar>tbody>tr>td>p {
+    font-family: 'Montserrat', sans-serif;
+    height: 45px;
+    width: 45px;
+    border-radius: 45px;
+    transition-duration: .2s;
+    line-height: 45px;
+    margin: 2.5px;
+    display: block;
+    text-align: center;
+}
+.today {
+    background-color: #b19bd7;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.futureDay {
+    background-color: #fff;
+    cursor: pointer;
+}
+.futureDay:hover{
+    background:#eee;
+}
+.futureDay.choiceDay,
+.today.choiceDay {
+    background: #6f5994;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.list {
+    width: 35%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    margin-right: 1em;
+}
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #b19bd7;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.list-item span {
+    flex-grow: 2;
+}
+.list-item input[type="checkbox"] {
+    appearance: none;
+    right: 5px;
+    top: 2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #b19bd7;
+    cursor: pointer;
+    position: relative;
+}
+.list-item input[type="checkbox"]:checked::before {
+    content: "\2713";
+    position: absolute;
+    left: 3.5px;
+    bottom: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b61818;
+}
+.list-button {
+    background-color: #b19bd7;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+}
+.list-button:hover {
+    background-color: #6f5994;
+}
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+div {
+    background-color : white;
+    height: auto;
+    width: 400px;
+    margin: 0px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius:5px;
+    box-shadow:0px 40px 30px -20px rgba(0,0,0,0.3);
+    margin-right: 1em;
+}
+td {
+    width: 50px;
+    height: 50px;
+}
+.memo {
+    width: 35%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.memo-button {
+    background-color: #b19bd7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.memo-button:hover {
+    background-color: #6f5994;
+}
+.memo textarea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+#memo-text {
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 2px solid #b19bd7;
+}
+.delete-button {
+    background-color: #fff;
+    color: rgb(199, 43, 48);
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size:1em;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.arrow {
+    color: #b19bd7;
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: flex;
+}
+#new-item {
+    width: 87%;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #b19bd7;
+}
